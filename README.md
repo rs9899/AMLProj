@@ -5,9 +5,10 @@ We have to generate a scene graph for that image.
 
 <SCENE GRAPH> --> scene graph is a graph whose nodes are the objects and the edges are relationship between the objects, for ex human — sits — horse, where human and horse are objects and sits is a relationship.
 
-Objective: Use word embedding for relationships and as a 
+Objective: 
+Use word embedding for relationships and as a 
 result we can while training use the given words but while 
-test time, show realtionship prediction also for unseen 
+test time, show realationship prediction also for unseen 
 relationships.
 
 So which word to extend the vocab to...
@@ -15,6 +16,9 @@ Let
 (Object concat Subject) -- > W <layer 3> <activations> (d size output) Size of word embeddings
 
 SQUARE DISTANCE MINISING IS SaME as dot product max//softmax
+SO out model will output word embedding of the relation giving a subject and an object.
+Separately we can output given subject , object and its feature, find the intensity of that relationship
+. Like , is it good enought to be shown in the output.
 
 TestTime 
 
@@ -24,9 +28,9 @@ or the embedding used
 
 # Identifying and understanding related work/existing implementations
 
-Code triying going on
+Code trying going on
 ---
-LIT SURVEY
+LIT SURVEY <IN THE REPORT>
 
 # What problems have you identified with the current methods? How can you patch them?
 Limited word vocab and logMAX over all varible hence the extra
